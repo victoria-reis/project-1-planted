@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 125%;
+  font-family: $general-font;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
