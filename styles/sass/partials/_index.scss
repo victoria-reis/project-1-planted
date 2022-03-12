@@ -1,0 +1,79 @@
+// header styles
+.index {
+  header {
+    background-image: url(../planted-final-assets/home-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $off-white;
+    height: 80vh;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 10px;
+    }
+
+    li {
+      margin: 0 15px;
+      text-transform: uppercase;
+    }
+
+    li:nth-child(1) {
+      color: $yellow;
+    }
+
+    h2 {
+      font-weight: normal;
+      text-transform: lowercase;
+      color: $yellow;
+      font-size: 8.3rem;
+      margin: 0 auto;
+      margin-top: calc(((80vh - 63px) - 382px) / 2);
+      max-width: 700px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+span {
+  text-transform: capitalize;
+  color: $off-white;
+}
+
+.header-img-2 {
+  background-image: url(../planted-final-assets/header-box.jpg);
+  background-position: center;
+  width: 500px;
+  height: 500px;
+  object-fit: scale-down;
+  position: absolute;
+  top: 330px;
+  right: 0px;
+}
+
+.about {
+  padding: 180px 0 150px;
+  height: 70vh;
+}
+
+.about-content {
+  margin-top: 20px;
+  text-align: center;
+
+  h3 {
+    font-size: 2.8rem;
+    letter-spacing: 1.3px;
+  }
+
+  p {
+    margin: 25px 0;
+  }
+}
