@@ -1,0 +1,73 @@
+// colors
+$black: #2c2c2c;
+$off-white: #f0efed;
+$forest-green: #074115;
+$yellow: #f8e71c;
+$green: #0e902d;
+
+//fonts
+$general-font: "Josefin Sans", sans-serif;
+$text-font: "Roboto", sans-serif;
+
+// mixins
+@mixin h1-typography {
+  font-family: $general-font;
+  font-weight: normal;
+  margin: 0;
+}
+
+@mixin h2-typography {
+  font-family: $general-font;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.6rem;
+}
+
+@mixin h2-typography-index {
+  font-family: $general-font;
+  font-weight: normal;
+  font-size: 8.3rem;
+  margin: 0;
+}
+
+@mixin h3-typography {
+  font-family: $general-font;
+  font-weight: bold;
+  font-size: 2.15rem;
+  letter-spacing: 0.06rem;
+  margin: 0;
+}
+
+@mixin h4-typography {
+  font-family: $general-font;
+  font-weight: bold;
+  font-size: 2.1rem;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+@mixin h5-typography {
+  font-family: $general-font;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+@mixin p-style {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 25px 0;
+}
+
+@mixin button-style {
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+  background-color: $green;
+  color: $off-white;
+  padding: 10px 30px;
+}

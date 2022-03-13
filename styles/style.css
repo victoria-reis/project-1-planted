@@ -263,13 +263,14 @@ template {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1400px;
 }
 
 html {
   font-size: 125%;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #2c2c2c;
 }
 
@@ -297,30 +298,20 @@ i {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .img-container {
-  -webkit-box-shadow: 15px 15px #f8e71c;
-          box-shadow: 15px 15px #f8e71c;
+  -webkit-box-shadow: 20px 20px #f8e71c;
+          box-shadow: 20px 20px #f8e71c;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
 p {
-  margin: 0;
-}
-
-h1 {
   font-weight: normal;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   line-height: 1.6rem;
+  margin: 25px 0;
 }
 
 button {
@@ -328,7 +319,7 @@ button {
   border: none;
   font-weight: bold;
   line-height: 1.6rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
   background-color: #0e902d;
   color: #f0efed;
   padding: 10px 30px;
@@ -347,6 +338,9 @@ footer {
   padding: 10px 0;
 }
 
+.index {
+  position: relative;
+}
 .index header {
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-position: center;
@@ -354,6 +348,11 @@ footer {
   background-size: cover;
   color: #f0efed;
   height: 80vh;
+}
+.index header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  margin: 0;
 }
 .index header ul {
   display: -webkit-box;
@@ -372,15 +371,17 @@ footer {
   color: #f8e71c;
 }
 .index header h2 {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
+  font-size: 8.3rem;
+  margin: 0;
   text-transform: lowercase;
   color: #f8e71c;
-  font-size: 8.3rem;
   margin: 0 auto;
   margin-top: calc((80vh - 63px - 382px) / 2);
   max-width: 700px;
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 .index .main-nav {
   display: -webkit-box;
@@ -411,7 +412,6 @@ span {
 
 .about {
   padding: 180px 0 150px;
-  height: 70vh;
 }
 
 .about-content {
@@ -419,9 +419,128 @@ span {
   text-align: center;
 }
 .about-content h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.15rem;
+  letter-spacing: 0.06rem;
+  margin: 0;
   font-size: 2.8rem;
-  letter-spacing: 1.3px;
 }
-.about-content p {
-  margin: 25px 0;
+
+.plants-and-workshops {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.plants-and-workshops h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+.plants,
+.workshops {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 45%;
+}
+
+.plants .text-container {
+  text-align: right;
+  margin: 60px 0 40px;
+  margin-left: 100px;
+}
+.plants .img-container {
+  position: relative;
+  bottom: 60px;
+}
+
+.workshops {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.workshops .img-container {
+  -webkit-box-shadow: -20px 20px #f8e71c;
+          box-shadow: -20px 20px #f8e71c;
+  position: relative;
+  top: 40px;
+}
+.workshops .text-container {
+  margin: 100px 0 40px;
+  margin-right: 100px;
+}
+
+.resources {
+  margin: 100px auto 80px;
+}
+.resources h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  position: relative;
+}
+.resources h5::before {
+  font-family: FontAwesome;
+  color: #2c2c2c;
+  background-color: #f8e71c;
+  display: inline-block;
+  font-size: 1rem;
+  width: 50px;
+  height: 37px;
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 50%;
+  position: absolute;
+  left: -70px;
+  bottom: -4px;
+}
+.resources ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.resources li {
+  max-width: 46%;
+  margin-top: 50px;
+}
+
+.green-house::before {
+  content: "\f06c";
+}
+
+.community::before {
+  content: "\f0c0";
+}
+
+.blog a {
+  padding-left: 0;
+}
+.blog::before {
+  content: "\f15b";
+}
+
+.get-in-touch::before {
+  content: "\f879";
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }

@@ -1,5 +1,6 @@
-// header styles
+// header and nav styles
 .index {
+  position: relative;
   header {
     background-image: url(../planted-final-assets/home-image-1.jpg);
     background-position: center;
@@ -7,6 +8,10 @@
     background-size: cover;
     color: $off-white;
     height: 80vh;
+
+    h1 {
+      @include h1-typography;
+    }
 
     ul {
       display: flex;
@@ -24,15 +29,14 @@
     }
 
     h2 {
-      font-weight: normal;
+      @include h2-typography-index;
       text-transform: lowercase;
       color: $yellow;
-      font-size: 8.3rem;
       margin: 0 auto;
       margin-top: calc(((80vh - 63px) - 382px) / 2);
       max-width: 700px;
-      position: relative;
       z-index: 1;
+      position: relative;
     }
   }
 
@@ -59,9 +63,9 @@ span {
   right: 0px;
 }
 
+// about styles
 .about {
   padding: 180px 0 150px;
-  height: 70vh;
 }
 
 .about-content {
@@ -69,11 +73,111 @@ span {
   text-align: center;
 
   h3 {
+    @include h3-typography;
     font-size: 2.8rem;
-    letter-spacing: 1.3px;
+  }
+}
+
+// plants and workshops styles
+.plants-and-workshops {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  h5 {
+    @include h5-typography;
+  }
+}
+
+.plants,
+.workshops {
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+}
+
+.plants {
+  .text-container {
+    text-align: right;
+    margin: 60px 0 40px;
+    margin-left: 100px;
   }
 
-  p {
-    margin: 25px 0;
+  .img-container {
+    position: relative;
+    bottom: 60px;
   }
+}
+
+.workshops {
+  flex-direction: column-reverse;
+
+  .img-container {
+    box-shadow: -20px 20px $yellow;
+    position: relative;
+    top: 40px;
+  }
+
+  .text-container {
+    margin: 100px 0 40px;
+    margin-right: 100px;
+  }
+}
+
+// resources styles
+.resources {
+  margin: 100px auto 80px;
+  h5 {
+    @include h5-typography;
+    position: relative;
+
+    &::before {
+      font-family: FontAwesome;
+      color: $black;
+      background-color: $yellow;
+      display: inline-block;
+      font-size: 1rem;
+      width: 50px;
+      height: calc(50px - 13px);
+      text-align: center;
+      padding-top: 13px;
+      border-radius: 50%;
+      position: absolute;
+      left: -70px;
+      bottom: -4px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  li {
+    max-width: 46%;
+    margin-top: 50px;
+  }
+}
+
+.green-house::before {
+  content: "\f06c";
+}
+
+.community::before {
+  content: "\f0c0";
+}
+
+.blog {
+  a {
+    padding-left: 0;
+  }
+  &::before {
+    content: "\f15b";
+  }
+}
+
+.get-in-touch::before {
+  content: "\f879";
+  transform: scaleX(-1);
 }

@@ -1,11 +1,12 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1400px;
 }
 
 html {
   font-size: 125%;
-  font-family: $general-font;
+  font-family: $text-font;
   color: $black;
 }
 
@@ -33,40 +34,20 @@ i {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .img-container {
-  box-shadow: 15px 15px $yellow;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0;
-}
-
-h1 {
-  font-weight: normal;
+  box-shadow: 20px 20px $yellow;
 }
 
 p {
-  font-family: $text-font;
-  line-height: 1.6rem;
+  @include p-style;
 }
 
 button {
-  cursor: pointer;
-  border: none;
-  font-weight: bold;
-  line-height: 1.6rem;
-  letter-spacing: 1px;
-  background-color: $green;
-  color: $off-white;
-  padding: 10px 30px;
+  @include button-style;
 }
 
 main,
