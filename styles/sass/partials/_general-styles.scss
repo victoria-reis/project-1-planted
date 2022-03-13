@@ -60,5 +60,9 @@ footer {
   text-align: center;
   color: white;
   font-family: $text-font;
-  padding: 10px 0;
+  padding: 5px 0;
+
+  p {
+    margin: 0 auto;
+  }
 }

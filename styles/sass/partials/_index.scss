@@ -181,3 +181,52 @@ span {
   content: "\f879";
   transform: scaleX(-1);
 }
+
+// banner styles
+.main-banner {
+  background-image: url(../planted-final-assets/banner-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 420px;
+}
+
+// founder styles
+.founder {
+  margin: 100px auto;
+  h4 {
+    @include h4-typography;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-container {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .text-container {
+    max-width: 60%;
+    margin-left: 80px;
+  }
+}
+
+// gallery styles
+.gallery {
+  background-color: white;
+  padding: 100px 0;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    max-width: 30%;
+  }
+}
