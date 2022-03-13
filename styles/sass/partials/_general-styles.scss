@@ -20,6 +20,10 @@ a {
   color: inherit;
   text-decoration: none;
   padding: 15px;
+
+  &:active {
+    color: $yellow;
+  }
 }
 
 ul {
@@ -30,6 +34,12 @@ i {
   font-family: FontAwesome;
   font-style: normal;
   color: $green;
+
+  &:hover,
+  &:focus {
+    color: $forest-green;
+    transition: 0.3s;
+  }
 }
 
 img {

@@ -66,10 +66,17 @@ $text-font: "Roboto", sans-serif;
 @mixin button-style {
   cursor: pointer;
   border: none;
+  font-family: $general-font;
   font-weight: bold;
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
   background-color: $green;
   color: $off-white;
   padding: 10px 30px;
+
+  &:hover,
+  &:focus {
+    background-color: $forest-green;
+    transition: 0.3s;
+  }
 }

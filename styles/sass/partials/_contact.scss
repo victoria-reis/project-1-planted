@@ -1,24 +1,27 @@
 // header and nav styles
-.contact-header {
-  background-image: url(../planted-final-assets/contact-header-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-  color: $off-white;
+.contact {
+  position: relative;
+  header {
+    background-image: url(../planted-final-assets/contact-header-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: $off-white;
 
-  h1 {
-    @include h1-typography;
-  }
+    h1 {
+      @include h1-typography;
+    }
 
-  .wrapper {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
 
-    div {
-      max-width: 300px;
-      margin-top: 250px;
+      div {
+        max-width: 300px;
+        margin-top: 180px;
+      }
     }
   }
 
@@ -44,4 +47,76 @@
 
 h2 {
   @include h2-typography;
+}
+
+// main styles
+
+.contact-information {
+  padding: 100px 0;
+
+  p {
+    margin: 0;
+  }
+  p:nth-of-type(1) {
+    font-weight: bold;
+    font-family: $general-font;
+    margin: 15px 0;
+  }
+
+  a {
+    padding: 8px;
+
+    &:nth-of-type(1) {
+      padding-left: 0;
+    }
+  }
+}
+
+.contact-form-container {
+  background-color: white;
+  max-width: 800px;
+  padding-top: 60px;
+  padding: 50px;
+  box-shadow: -20px 20px $yellow;
+  position: absolute;
+  bottom: 150px;
+  right: 60px;
+
+  button {
+    @include button-style;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 48%;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 2px solid $green;
+  padding: 20px;
+
+  &:active,
+  &:focus {
+    outline: 2px solid $forest-green;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 30px 20px;
+  border: 2px solid $green;
+
+  &:active,
+  &:focus {
+    outline: 2px solid $forest-green;
+  }
 }

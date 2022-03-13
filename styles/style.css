@@ -285,6 +285,9 @@ a {
   text-decoration: none;
   padding: 15px;
 }
+a:active {
+  color: #f8e71c;
+}
 
 ul {
   list-style: none;
@@ -294,6 +297,11 @@ i {
   font-family: FontAwesome;
   font-style: normal;
   color: #0e902d;
+}
+i:hover, i:focus {
+  color: #074115;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 img {
@@ -317,12 +325,18 @@ p {
 button {
   cursor: pointer;
   border: none;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
   background-color: #0e902d;
   color: #f0efed;
   padding: 10px 30px;
+}
+button:hover, button:focus {
+  background-color: #074115;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main,
@@ -406,8 +420,6 @@ span {
   background-position: center;
   width: 500px;
   height: 500px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
   position: absolute;
   top: 330px;
   right: 0px;
@@ -608,20 +620,23 @@ span {
   max-width: 30%;
 }
 
-.contact-header {
+.contact {
+  position: relative;
+}
+.contact header {
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 50vh;
   color: #f0efed;
 }
-.contact-header h1 {
+.contact header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   margin: 0;
 }
-.contact-header .wrapper {
+.contact header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,11 +645,11 @@ span {
           align-items: center;
   padding: 10px 0;
 }
-.contact-header .wrapper div {
+.contact header .wrapper div {
   max-width: 300px;
-  margin-top: 250px;
+  margin-top: 180px;
 }
-.contact-header ul {
+.contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,14 +658,14 @@ span {
           justify-content: space-between;
   padding-left: 10px;
 }
-.contact-header li {
+.contact li {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.contact-header li:nth-child(4) {
+.contact li:nth-child(4) {
   color: #f8e71c;
 }
-.contact-header nav {
+.contact nav {
   background-color: black;
 }
 
@@ -661,4 +676,87 @@ h2 {
   font-size: 4rem;
   line-height: 4.6rem;
   margin: 0;
+}
+
+.contact-information {
+  padding: 100px 0;
+}
+.contact-information p {
+  margin: 0;
+}
+.contact-information p:nth-of-type(1) {
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 15px 0;
+}
+.contact-information a {
+  padding: 8px;
+}
+.contact-information a:nth-of-type(1) {
+  padding-left: 0;
+}
+
+.contact-form-container {
+  background-color: white;
+  max-width: 800px;
+  padding-top: 60px;
+  padding: 50px;
+  -webkit-box-shadow: -20px 20px #f8e71c;
+          box-shadow: -20px 20px #f8e71c;
+  position: absolute;
+  bottom: 150px;
+  right: 60px;
+}
+.contact-form-container button {
+  cursor: pointer;
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+  background-color: #0e902d;
+  color: #f0efed;
+  padding: 10px 30px;
+  width: 100%;
+  margin-top: 50px;
+}
+.contact-form-container button:hover, .contact-form-container button:focus {
+  background-color: #074115;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+input[type=text],
+input[type=email] {
+  width: 48%;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 2px solid #0e902d;
+  padding: 20px;
+}
+input[type=text]:active, input[type=text]:focus,
+input[type=email]:active,
+input[type=email]:focus {
+  outline: 2px solid #074115;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 30px 20px;
+  border: 2px solid #0e902d;
+}
+textarea:active, textarea:focus {
+  outline: 2px solid #074115;
 }
