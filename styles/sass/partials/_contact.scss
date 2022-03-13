@@ -20,7 +20,7 @@
 
       div {
         max-width: 300px;
-        margin-top: 180px;
+        margin-top: 130px;
       }
     }
   }
@@ -43,10 +43,10 @@
   nav {
     background-color: black;
   }
-}
 
-h2 {
-  @include h2-typography;
+  h2 {
+    @include h2-typography;
+  }
 }
 
 // main styles
@@ -72,6 +72,7 @@ h2 {
   }
 }
 
+// form styles
 .contact-form-container {
   background-color: white;
   max-width: 800px;
@@ -81,42 +82,4 @@ h2 {
   position: absolute;
   bottom: 150px;
   right: 60px;
-
-  button {
-    @include button-style;
-    width: 100%;
-    margin-top: 50px;
-  }
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 48%;
-  margin-bottom: 40px;
-  border: none;
-  border-bottom: 2px solid $green;
-  padding: 20px;
-
-  &:active,
-  &:focus {
-    outline: 2px solid $forest-green;
-  }
-}
-
-textarea {
-  width: 100%;
-  min-height: 200px;
-  padding: 30px 20px;
-  border: 2px solid $green;
-
-  &:active,
-  &:focus {
-    outline: 2px solid $forest-green;
-  }
 }

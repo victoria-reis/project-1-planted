@@ -1,0 +1,55 @@
+// header and nav styles
+// header and nav styles
+.blog {
+  position: relative;
+  header {
+    background-image: url(../planted-final-assets/blog-header-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: $off-white;
+
+    h1 {
+      @include h1-typography;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      div {
+        max-width: 300px;
+        margin-top: 150px;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  li {
+    margin: 0 15px;
+    text-transform: uppercase;
+  }
+
+  nav {
+    background-color: black;
+
+    li:nth-child(4) {
+      color: $yellow;
+    }
+  }
+
+  h2 {
+    @include h2-typography;
+  }
+
+  main {
+    display: flex;
+  }
+}

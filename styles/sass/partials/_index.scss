@@ -167,12 +167,16 @@ span {
   content: "\f0c0";
 }
 
-.blog {
+.blog-link {
   a {
     padding-left: 0;
   }
   &::before {
     content: "\f15b";
+  }
+
+  &:active {
+    color: $yellow;
   }
 }
 
