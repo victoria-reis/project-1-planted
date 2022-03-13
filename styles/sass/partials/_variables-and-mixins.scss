@@ -18,9 +18,11 @@ $text-font: "Roboto", sans-serif;
 
 @mixin h2-typography {
   font-family: $general-font;
+  color: $yellow;
   font-weight: bold;
   font-size: 4rem;
   line-height: 4.6rem;
+  margin: 0;
 }
 
 @mixin h2-typography-index {

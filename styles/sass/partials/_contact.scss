@@ -1,0 +1,47 @@
+// header and nav styles
+.contact-header {
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  color: $off-white;
+
+  h1 {
+    @include h1-typography;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    div {
+      max-width: 300px;
+      margin-top: 250px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  li {
+    margin: 0 15px;
+    text-transform: uppercase;
+  }
+
+  li:nth-child(4) {
+    color: $yellow;
+  }
+
+  nav {
+    background-color: black;
+  }
+}
+
+h2 {
+  @include h2-typography;
+}

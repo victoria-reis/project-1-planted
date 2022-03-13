@@ -607,3 +607,58 @@ span {
 .gallery li {
   max-width: 30%;
 }
+
+.contact-header {
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  color: #f0efed;
+}
+.contact-header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+.contact-header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+.contact-header .wrapper div {
+  max-width: 300px;
+  margin-top: 250px;
+}
+.contact-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+}
+.contact-header li {
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+.contact-header li:nth-child(4) {
+  color: #f8e71c;
+}
+.contact-header nav {
+  background-color: black;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #f8e71c;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  margin: 0;
+}
