@@ -40,6 +40,14 @@
     li {
       margin: 0 15px;
       text-transform: uppercase;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+
+    a:focus {
+      color: $yellow;
     }
   }
 

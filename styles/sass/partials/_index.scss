@@ -22,10 +22,15 @@
     li {
       margin: 0 15px;
       text-transform: uppercase;
-    }
 
-    li:nth-child(1) {
-      color: $yellow;
+      &:nth-child(1),
+      &:hover {
+        color: $yellow;
+      }
+
+      a:focus {
+        color: $yellow;
+      }
     }
 
     h2 {

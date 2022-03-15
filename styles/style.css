@@ -436,7 +436,10 @@ footer p {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.index header li:nth-child(1) {
+.index header li:nth-child(1), .index header li:hover {
+  color: #f8e71c;
+}
+.index header li a:focus {
   color: #f8e71c;
 }
 .index header h2 {
@@ -718,7 +721,10 @@ span {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.contact li:nth-child(4) {
+.contact li:nth-child(1), .contact li:hover {
+  color: #f8e71c;
+}
+.contact li a:focus {
   color: #f8e71c;
 }
 .contact nav {
@@ -807,6 +813,12 @@ span {
 .blog nav li {
   margin: 0 15px;
   text-transform: uppercase;
+}
+.blog nav li:hover {
+  color: #f8e71c;
+}
+.blog nav a:focus {
+  color: #f8e71c;
 }
 .blog h2 {
   font-family: "Josefin Sans", sans-serif;
