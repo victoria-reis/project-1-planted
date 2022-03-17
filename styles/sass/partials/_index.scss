@@ -9,10 +9,6 @@
     color: $off-white;
     height: 80vh;
 
-    h1 {
-      @include h1-typography;
-    }
-
     ul {
       display: flex;
       justify-content: space-between;
@@ -50,6 +46,13 @@
     align-items: center;
     padding: 10px 0;
   }
+
+  .wrapper {
+    // position: relative;
+  }
+  .main-and-aside-container {
+    display: flex;
+  }
 }
 
 span {
@@ -60,11 +63,11 @@ span {
 .header-img-2 {
   background-image: url(../planted-final-assets/header-box.jpg);
   background-position: center;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  top: 330px;
-  right: 0px;
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  left: 700px;
+  bottom: 100px;
 }
 
 // about styles
@@ -132,7 +135,6 @@ span {
 .resources {
   margin: 100px auto 80px;
   h5 {
-    @include h5-typography;
     position: relative;
 
     &::before {

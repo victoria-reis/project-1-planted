@@ -9,16 +9,12 @@
     height: 450px;
     color: $off-white;
 
-    h1 {
-      @include h1-typography;
-    }
-
     .wrapper {
       display: flex;
       align-items: center;
       padding: 10px 0 0;
 
-      div {
+      h2 {
         max-width: 300px;
         margin-top: 120px;
       }
@@ -46,10 +42,6 @@
   }
   nav {
     background-color: black;
-  }
-
-  h2 {
-    @include h2-typography;
   }
 }
 

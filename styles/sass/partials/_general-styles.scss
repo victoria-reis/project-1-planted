@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  max-width: 1400px;
+  background-color: $off-white;
 }
 
 html {
@@ -14,6 +14,11 @@ html {
   width: 85%;
   max-width: 1260px;
   margin: 0 auto;
+}
+
+.main-and-aside-container {
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 a {
@@ -56,13 +61,28 @@ p {
   @include p-style;
 }
 
-button {
-  @include button-style;
+h1 {
+  @include h1-typography;
 }
 
-main,
-aside {
-  background-color: $off-white;
+h2 {
+  @include h2-typography;
+}
+
+h3 {
+  @include h3-typography;
+}
+
+h4 {
+  @include h4-typography;
+}
+
+h5 {
+  @include h5-typography;
+}
+
+button {
+  @include button-style;
 }
 
 form {

@@ -8,27 +8,15 @@
     height: 450px;
     color: $off-white;
 
-    h1 {
-      @include h1-typography;
-    }
-
     .wrapper {
       display: flex;
       align-items: center;
       padding: 10px 0 0;
 
-      div {
+      h2 {
         max-width: 300px;
-        margin-top: 200px;
+        margin-top: 120px;
       }
-    }
-  }
-
-  nav {
-    background-color: black;
-
-    li:nth-child(4) {
-      color: $yellow;
     }
 
     ul {
@@ -41,20 +29,19 @@
       margin: 0 15px;
       text-transform: uppercase;
 
+      &:nth-child(1),
       &:hover {
         color: $yellow;
       }
-    }
 
-    a:focus {
-      color: $yellow;
+      a:focus {
+        color: $yellow;
+      }
+    }
+    nav {
+      background-color: black;
     }
   }
-
-  h2 {
-    @include h2-typography;
-  }
-
   main {
     display: flex;
     justify-content: space-between;
@@ -62,6 +49,7 @@
 }
 
 // main styles
+
 .about-and-posts {
   max-width: 30%;
   background-color: white;
@@ -78,11 +66,9 @@
     position: relative;
     top: -50px;
     right: 110px;
-    flex-shrink: 2;
   }
 
   h4 {
-    @include h4-typography;
     font-size: 1.2rem;
   }
 
@@ -127,7 +113,6 @@
   }
 
   h3 {
-    @include h3-typography;
     font-size: 2.15rem;
   }
 
@@ -143,16 +128,13 @@
   }
 }
 
+// aside styles
 aside {
-  .wrapper {
-    max-width: 60%;
-    margin: 0;
-    margin-left: calc(1400px - 840px);
-    padding: 40px 150px 80px 50px;
-  }
+  max-width: 60%;
+  margin-left: auto;
+  padding: 40px 120px 20px 50px;
 
   h4 {
-    @include h4-typography;
     font-size: 1.2rem;
     margin-bottom: 40px;
   }
@@ -183,7 +165,6 @@ aside {
 
 ul {
   h5 {
-    @include h5-typography;
     font-size: 1rem;
     color: $forest-green;
   }
