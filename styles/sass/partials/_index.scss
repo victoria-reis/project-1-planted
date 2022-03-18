@@ -34,11 +34,15 @@
       text-transform: lowercase;
       color: $yellow;
       margin: 0 auto;
-      margin-top: calc(((80vh - 63px) - 382px) / 2);
+      margin-top: calc(((80vh - 63px) / 2) / 2);
       max-width: 700px;
       z-index: 1;
       position: relative;
     }
+  }
+
+  nav span {
+    display: none;
   }
 
   .main-nav {
@@ -46,6 +50,11 @@
     align-items: center;
     padding: 10px 0;
   }
+}
+
+.menu-icon {
+  display: none;
+  padding-bottom: 5px;
 }
 
 .header-container {
@@ -141,7 +150,7 @@ span {
       color: $black;
       background-color: $yellow;
       display: inline-block;
-      font-size: 1rem;
+      font-size: 20px;
       width: 50px;
       height: calc(50px - 13px);
       text-align: center;

@@ -10,21 +10,21 @@ $general-font: "Josefin Sans", sans-serif;
 $text-font: "Roboto", sans-serif;
 
 // mixins font size
-@mixin fontSize($sizeValue) {
+@mixin font-size($sizeValue) {
   font-size: $sizeValue * 1px;
   font-size: ($sizeValue/20) * 1rem;
 }
 
 // mixins typography
 @mixin h1-typography {
-  @include fontSize(40);
+  @include font-size(40);
   font-family: $general-font;
   font-weight: normal;
   margin: 0;
 }
 
 @mixin h2-typography {
-  @include fontSize(80);
+  @include font-size(80);
   font-family: $general-font;
   color: $yellow;
   font-weight: bold;
@@ -33,16 +33,16 @@ $text-font: "Roboto", sans-serif;
 }
 
 @mixin h2-typography-index {
-  @include fontSize(166);
+  // @include font-size(166);
+  font-size: 800%;
   font-family: $general-font;
   font-weight: normal;
-  font-size: 8.3rem;
   line-height: 7rem;
   margin: 0;
 }
 
 @mixin h3-typography {
-  @include fontSize(56.3);
+  @include font-size(56.3);
   font-family: $general-font;
   font-weight: bold;
   letter-spacing: 0.06rem;
@@ -50,7 +50,7 @@ $text-font: "Roboto", sans-serif;
 }
 
 @mixin h4-typography {
-  @include fontSize(43);
+  @include font-size(43);
   font-family: $general-font;
   font-weight: bold;
   letter-spacing: 0.05rem;
@@ -58,7 +58,7 @@ $text-font: "Roboto", sans-serif;
 }
 
 @mixin h5-typography {
-  @include fontSize(32);
+  @include font-size(32);
   font-family: $general-font;
   font-weight: bold;
   letter-spacing: 0.05rem;
