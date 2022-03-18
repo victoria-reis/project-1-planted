@@ -46,13 +46,12 @@
     align-items: center;
     padding: 10px 0;
   }
+}
 
-  .wrapper {
-    // position: relative;
-  }
-  .main-and-aside-container {
-    display: flex;
-  }
+.header-container {
+  display: flex;
+  position: relative;
+  max-width: 50%;
 }
 
 span {
@@ -63,11 +62,10 @@ span {
 .header-img-2 {
   background-image: url(../planted-final-assets/header-box.jpg);
   background-position: center;
-  max-width: 500px;
-  max-height: 500px;
-  position: relative;
-  left: 700px;
-  bottom: 100px;
+  max-width: 100%;
+  position: absolute;
+  right: -650px;
+  top: -300px;
 }
 
 // about styles
@@ -134,6 +132,7 @@ span {
 // resources styles
 .resources {
   margin: 100px auto 80px;
+  padding-left: 10px;
   h5 {
     position: relative;
 
