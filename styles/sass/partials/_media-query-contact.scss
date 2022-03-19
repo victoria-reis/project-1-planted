@@ -1,6 +1,7 @@
 // media query max width: 1300px
 @media (max-width: 1300px) {
   .contact {
+    // main styles
     main {
       .wrapper {
         display: flex;
@@ -20,7 +21,9 @@
   }
 }
 
+// media query max width: 850px
 @media (max-width: 850px) {
+  // header styles
   .contact {
     h1 {
       padding: 10px 0;
@@ -56,6 +59,7 @@
     }
   }
 
+  // main styles
   .contact-form-container {
     background-color: $off-white;
     box-shadow: none;
@@ -72,6 +76,7 @@
   }
 }
 
+// media query max-width: 500px
 @media (max-width: 500px) {
   .contact-form-container {
     max-width: 100%;

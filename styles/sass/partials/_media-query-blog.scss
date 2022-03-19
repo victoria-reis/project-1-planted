@@ -1,11 +1,13 @@
 // media query max-width
 @media (max-width: 1100px) {
+  // main styles
   .latest-post {
     .text-container {
       padding-right: 50px;
     }
   }
 
+  //aside styles
   aside {
     padding-right: 50px;
   }
