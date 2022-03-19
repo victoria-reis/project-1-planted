@@ -26,13 +26,13 @@ a {
   text-decoration: none;
   padding: 15px;
 
+  &:visited {
+    color: inherit;
+  }
+
   &:active,
   &:focus {
     color: $yellow;
-  }
-
-  &:visited {
-    color: inherit;
   }
 }
 
@@ -63,7 +63,6 @@ img {
 }
 
 .menu-icon {
-  // display: none;
   padding-bottom: 5px;
 }
 
