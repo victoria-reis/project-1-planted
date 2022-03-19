@@ -161,14 +161,6 @@ span {
   }
 }
 
-.green-house::before {
-  content: "\f06c";
-}
-
-.community::before {
-  content: "\f0c0";
-}
-
 .blog-link {
   a {
     padding-left: 0;
@@ -180,6 +172,14 @@ span {
   &:active {
     color: $yellow;
   }
+}
+
+.green-house::before {
+  content: "\f06c";
+}
+
+.community::before {
+  content: "\f0c0";
 }
 
 .get-in-touch::before {
