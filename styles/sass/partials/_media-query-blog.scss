@@ -25,18 +25,41 @@
 @media (max-width: 850px) {
   // header styles
   .blog {
+    h1 {
+      padding: 10px 0;
+    }
     header {
+      ul {
+        flex-direction: column;
+        position: fixed;
+        padding-right: 35px;
+        right: -150px;
+        top: 50px;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        z-index: 10;
+        transition: 0.4s;
+      }
+
       li {
-        display: none;
+        margin: 15px 0;
+        text-align: right;
+      }
+
+      input[type="checkbox"] {
+        top: 25px;
+
+        &:checked ~ ul {
+          right: 0;
+        }
+      }
+
+      .menu-icon {
+        top: 20px;
       }
     }
 
     main {
       flex-direction: column-reverse;
-    }
-
-    .main-nav {
-      padding: 20px 0;
     }
   }
 

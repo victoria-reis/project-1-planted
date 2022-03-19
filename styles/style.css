@@ -322,11 +322,14 @@ img {
 }
 
 .menu-icon {
-  display: none;
   padding-bottom: 5px;
 }
 
 nav span {
+  display: none;
+}
+
+input[type=checkbox] {
   display: none;
 }
 
@@ -530,7 +533,7 @@ span {
 .header-img-2 {
   background-image: url(../planted-final-assets/header-box.jpg);
   background-position: center;
-  max-width: 100%;
+  max-width: 90%;
   position: absolute;
   right: -650px;
   top: -300px;
@@ -983,7 +986,7 @@ ul h5 {
 
 @media (max-width: 1400px) {
   .header-img-2 {
-    right: -720px;
+    right: -600px;
     top: -280px;
   }
 }
@@ -1008,7 +1011,10 @@ ul h5 {
   }
 
   .index header {
-    height: 70vh;
+    height: 80vh;
+  }
+  .index header h2 {
+    margin-top: calc((80vh - 224px) / 2 / 2);
   }
 
   .about {
@@ -1032,20 +1038,48 @@ ul h5 {
   }
 }
 @media (max-width: 850px) {
+  .index h1 {
+    margin-top: 30px;
+  }
   .index header h2 {
     font-size: 500%;
     line-height: 5rem;
     margin: 0 auto;
     margin-top: calc((80vh - 160px) / 2 / 2);
   }
+  .index header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    padding-right: 35px;
+    right: -150px;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
   .index header li {
-    display: none;
+    margin: 15px 0;
+    text-align: right;
   }
-  .index .main-nav {
-    padding: 30px 0;
+  .index header input[type=checkbox]:checked ~ ul {
+    right: 0;
   }
-  .index nav span {
+
+  nav span {
     display: in-line;
+  }
+
+  input[type=checkbox] {
+    display: inline-block;
+    opacity: 0;
+    margin-left: auto;
+    position: fixed;
+    top: 50px;
+    right: 50px;
   }
 
   .menu-icon {
@@ -1192,17 +1226,41 @@ ul h5 {
   }
 }
 @media (max-width: 850px) {
+  .blog h1 {
+    padding: 10px 0;
+  }
+  .blog header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    padding-right: 35px;
+    right: -150px;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
   .blog header li {
-    display: none;
+    margin: 15px 0;
+    text-align: right;
+  }
+  .blog header input[type=checkbox] {
+    top: 25px;
+  }
+  .blog header input[type=checkbox]:checked ~ ul {
+    right: 0;
+  }
+  .blog header .menu-icon {
+    top: 20px;
   }
   .blog main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-  .blog .main-nav {
-    padding: 20px 0;
   }
 
   .menu-icon {
@@ -1324,11 +1382,35 @@ form input[type=email] {
   }
 }
 @media (max-width: 850px) {
-  .contact header li {
-    display: none;
+  .contact h1 {
+    padding: 10px 0;
   }
-  .contact .main-nav {
-    padding: 20px 0;
+  .contact header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    padding-right: 35px;
+    right: -150px;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .contact header li {
+    margin: 15px 0;
+    text-align: right;
+  }
+  .contact header input[type=checkbox] {
+    top: 25px;
+  }
+  .contact header input[type=checkbox]:checked ~ ul {
+    right: 0;
+  }
+  .contact header .menu-icon {
+    top: 20px;
   }
 
   .contact-form-container {

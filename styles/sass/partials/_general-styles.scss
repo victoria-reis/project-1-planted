@@ -58,11 +58,15 @@ img {
 }
 
 .menu-icon {
-  display: none;
+  // display: none;
   padding-bottom: 5px;
 }
 
 nav span {
+  display: none;
+}
+
+input[type="checkbox"] {
   display: none;
 }
 
