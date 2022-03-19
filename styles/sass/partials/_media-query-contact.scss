@@ -1,0 +1,62 @@
+// media query max width: 1300px
+@media (max-width: 1300px) {
+  .contact {
+    main {
+      .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .contact-information {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact-form-container {
+    margin: 0 auto;
+    position: static;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact {
+    header {
+      li {
+        display: none;
+      }
+    }
+
+    .main-nav {
+      padding: 20px 0;
+    }
+  }
+
+  .contact-form-container {
+    background-color: $off-white;
+    box-shadow: none;
+    padding: 50px 0;
+    max-width: 80%;
+
+    input {
+      background-color: $off-white;
+    }
+  }
+
+  .contact-information {
+    padding: 40px 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form-container {
+    max-width: 100%;
+  }
+  form {
+    input[type="text"],
+    input[type="email"] {
+      margin-bottom: 20px;
+    }
+  }
+}
