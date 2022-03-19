@@ -294,6 +294,9 @@ a {
 a:active {
   color: #f8e71c;
 }
+a:visited {
+  color: initial;
+}
 
 ul {
   list-style: none;

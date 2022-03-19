@@ -29,6 +29,10 @@ a {
   &:active {
     color: $yellow;
   }
+
+  &:visited {
+    color: initial;
+  }
 }
 
 ul {
