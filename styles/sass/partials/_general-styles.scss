@@ -26,12 +26,13 @@ a {
   text-decoration: none;
   padding: 15px;
 
-  &:active {
+  &:active,
+  &:focus {
     color: $yellow;
   }
 
   &:visited {
-    color: initial;
+    color: inherit;
   }
 }
 

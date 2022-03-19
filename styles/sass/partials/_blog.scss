@@ -29,12 +29,8 @@
       margin: 0 15px;
       text-transform: uppercase;
 
-      &:nth-child(1),
+      &:nth-child(3),
       &:hover {
-        color: $yellow;
-      }
-
-      a:focus {
         color: $yellow;
       }
     }

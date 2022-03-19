@@ -291,11 +291,11 @@ a {
   text-decoration: none;
   padding: 15px;
 }
-a:active {
+a:active, a:focus {
   color: #f8e71c;
 }
 a:visited {
-  color: initial;
+  color: inherit;
 }
 
 ul {
@@ -491,9 +491,6 @@ footer p {
   text-transform: uppercase;
 }
 .index header li:nth-child(1), .index header li:hover {
-  color: #f8e71c;
-}
-.index header li a:focus {
   color: #f8e71c;
 }
 .index header h2 {
@@ -776,10 +773,7 @@ span {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.contact li:nth-child(1), .contact li:hover {
-  color: #f8e71c;
-}
-.contact li a:focus {
+.contact li:nth-child(4), .contact li:hover {
   color: #f8e71c;
 }
 .contact nav {
@@ -850,10 +844,7 @@ span {
   margin: 0 15px;
   text-transform: uppercase;
 }
-.blog header li:nth-child(1), .blog header li:hover {
-  color: #f8e71c;
-}
-.blog header li a:focus {
+.blog header li:nth-child(3), .blog header li:hover {
   color: #f8e71c;
 }
 .blog header nav {
