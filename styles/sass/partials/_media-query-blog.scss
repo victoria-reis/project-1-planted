@@ -1,0 +1,141 @@
+// media query max-width
+@media (max-width: 1100px) {
+  .latest-post {
+    .text-container {
+      padding-right: 50px;
+    }
+  }
+
+  aside {
+    padding-right: 50px;
+  }
+}
+
+// media query max-width 950px
+@media (max-width: 950px) {
+  // header styles
+  .blog {
+    header {
+      height: 370px;
+    }
+  }
+}
+
+// media query max-width 850px
+@media (max-width: 850px) {
+  // header styles
+  .blog {
+    header {
+      li {
+        display: none;
+      }
+    }
+
+    main {
+      flex-direction: column-reverse;
+    }
+
+    .main-nav {
+      padding: 20px 0;
+    }
+  }
+
+  .menu-icon {
+    display: block;
+    @include font-size(30);
+    color: $yellow;
+    position: fixed;
+    right: 50px;
+    z-index: 10;
+
+    &:hover {
+      color: $yellow;
+      cursor: pointer;
+    }
+  }
+
+  // main styles
+  .recent-posts {
+    padding-top: 20px;
+    h4 {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 0 20px;
+
+      li {
+        max-width: 20%;
+      }
+    }
+  }
+
+  .about-and-posts {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+
+    .img-container {
+      display: none;
+    }
+  }
+
+  .about-planted {
+    display: none;
+  }
+
+  .latest-post {
+    max-width: 90%;
+    border: none;
+    margin: 0 auto;
+
+    .text-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .img-container {
+      position: static;
+      max-width: 70%;
+      margin: 40px auto 60px;
+    }
+  }
+
+  // aside styles
+  aside {
+    max-width: 100%;
+  }
+
+  .comment-1,
+  .comment-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      display: none;
+    }
+
+    .text-container {
+      margin-left: 0;
+    }
+  }
+
+  // form styles
+  form {
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+    }
+  }
+}
+
+// media styles
+@media (max-width: 500px) {
+  .recent-posts {
+    display: none;
+  }
+}

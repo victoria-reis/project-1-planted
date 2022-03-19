@@ -321,6 +321,15 @@ img {
           box-shadow: 20px 20px #f8e71c;
 }
 
+.menu-icon {
+  display: none;
+  padding-bottom: 5px;
+}
+
+nav span {
+  display: none;
+}
+
 p {
   font-weight: normal;
   font-size: 1rem;
@@ -495,9 +504,6 @@ footer p {
   z-index: 1;
   position: relative;
 }
-.index nav span {
-  display: none;
-}
 .index .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,11 +512,6 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
-}
-
-.menu-icon {
-  display: none;
-  padding-bottom: 5px;
 }
 
 .header-container {
@@ -980,10 +981,9 @@ ul h5 {
   color: #074115;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .header-img-2 {
-    max-width: 120%;
-    right: -700px;
+    right: -720px;
     top: -280px;
   }
 }
@@ -1175,5 +1175,129 @@ ul h5 {
 @media (max-width: 415px) {
   .index header h2 {
     font-size: 400%;
+  }
+}
+@media (max-width: 1100px) {
+  .latest-post .text-container {
+    padding-right: 50px;
+  }
+
+  aside {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 950px) {
+  .blog header {
+    height: 370px;
+  }
+}
+@media (max-width: 850px) {
+  .blog header li {
+    display: none;
+  }
+  .blog main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blog .main-nav {
+    padding: 20px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    font-size: 1.5rem;
+    color: #f8e71c;
+    position: fixed;
+    right: 50px;
+    z-index: 10;
+  }
+  .menu-icon:hover {
+    color: #f8e71c;
+    cursor: pointer;
+  }
+
+  .recent-posts {
+    padding-top: 20px;
+  }
+  .recent-posts h4 {
+    text-align: center;
+  }
+  .recent-posts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .recent-posts ul li {
+    max-width: 20%;
+  }
+
+  .about-and-posts {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .about-and-posts .img-container {
+    display: none;
+  }
+
+  .about-planted {
+    display: none;
+  }
+
+  .latest-post {
+    max-width: 90%;
+    border: none;
+    margin: 0 auto;
+  }
+  .latest-post .text-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .latest-post .img-container {
+    position: static;
+    max-width: 70%;
+    margin: 40px auto 60px;
+  }
+
+  aside {
+    max-width: 100%;
+  }
+
+  .comment-1,
+.comment-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .comment-1 img,
+.comment-2 img {
+    display: none;
+  }
+  .comment-1 .text-container,
+.comment-2 .text-container {
+    margin-left: 0;
+  }
+
+  form input[type=text],
+form input[type=email] {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .recent-posts {
+    display: none;
   }
 }

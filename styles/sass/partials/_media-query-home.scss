@@ -1,8 +1,7 @@
 // media query max-width: 1500px
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .header-img-2 {
-    max-width: 120%;
-    right: -700px;
+    right: -720px;
     top: -280px;
   }
 }
@@ -225,7 +224,7 @@
   }
 }
 
-// medi query max-width 415px
+// media query max-width 415px
 @media (max-width: 415px) {
   .index {
     header {
