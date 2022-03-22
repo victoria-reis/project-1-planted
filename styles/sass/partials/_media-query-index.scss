@@ -100,11 +100,11 @@
     }
   }
 
+  // style being applied to all pages
   nav span {
     display: in-line;
   }
 
-  // style being applied in contact and blog page
   input[type="checkbox"] {
     display: inline-block;
     opacity: 0;
@@ -127,11 +127,11 @@
       color: $yellow;
       cursor: pointer;
     }
-  } // end of styles being applied in all pages
+  }
 
   .wrapper {
-    max-width: 80%; // being applied to general styles
-  }
+    max-width: 80%;
+  } // end of styles being applied in all pages
 
   // about styles
   .about {
