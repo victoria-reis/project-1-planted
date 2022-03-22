@@ -1,28 +1,11 @@
 // header and nav styles
 .index {
-  position: relative;
   header {
     background-image: url(../planted-final-assets/home-image-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $off-white;
-    height: 80vh;
+    height: 90vh;
 
-    ul {
-      display: flex;
-      justify-content: space-between;
-      padding-left: 10px;
-    }
-
-    li {
-      margin: 0 15px;
-      text-transform: uppercase;
-
-      &:nth-child(1),
-      &:hover {
-        color: $yellow;
-      }
+    li:nth-child(1) {
+      color: $yellow;
     }
 
     h2 {
@@ -30,24 +13,21 @@
       text-transform: lowercase;
       color: $yellow;
       margin: 0 auto;
-      margin-top: calc(((80vh - 63px) / 2) / 2);
+      margin-top: calc(((90vh - 63px + 73px) / 2) / 2);
       max-width: 700px;
       z-index: 1;
       position: relative;
     }
-  }
 
-  .main-nav {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
+    .main-nav {
+      background-color: transparent;
+    }
   }
 }
 
 .header-container {
   display: flex;
-  position: relative;
-  max-width: 50%;
+  justify-items: center;
 }
 
 span {
@@ -58,10 +38,12 @@ span {
 .header-img-2 {
   background-image: url(../planted-final-assets/header-box.jpg);
   background-position: center;
-  max-width: 90%;
+  min-width: 38%;
+  max-width: 48%;
+  height: 70%;
   position: absolute;
-  right: -650px;
-  top: -260px;
+  right: 5%;
+  top: 220px;
 }
 
 // about styles

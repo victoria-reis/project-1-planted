@@ -34,12 +34,12 @@
       ul {
         flex-direction: column;
         position: fixed;
-        padding-right: 35px;
+        padding-right: 15px;
         right: -150px;
         top: 50px;
         background-color: rgba($color: #000000, $alpha: 0.8);
         z-index: 10;
-        transition: 0.4s;
+        transition: 0.5s;
       }
 
       li {
@@ -62,20 +62,6 @@
 
     main {
       flex-direction: column-reverse;
-    }
-  }
-
-  .menu-icon {
-    display: block;
-    @include font-size(30);
-    color: $yellow;
-    position: fixed;
-    right: 50px;
-    z-index: 10;
-
-    &:hover {
-      color: $yellow;
-      cursor: pointer;
     }
   }
 

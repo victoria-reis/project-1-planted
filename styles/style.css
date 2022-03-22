@@ -281,6 +281,46 @@ html {
   margin: 0 auto;
 }
 
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  color: #f0efed;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 0;
+}
+header .wrapper h2 {
+  max-width: 300px;
+  margin-top: 120px;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+}
+header li {
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+header li:hover {
+  color: #f8e71c;
+}
+header nav {
+  background-color: black;
+}
+
 .main-and-aside-container {
   margin: 0 auto;
   max-width: 1260px;
@@ -469,31 +509,11 @@ footer p {
   margin: 0 auto;
 }
 
-.index {
-  position: relative;
-}
 .index header {
   background-image: url(../planted-final-assets/home-image-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #f0efed;
-  height: 80vh;
+  height: 90vh;
 }
-.index header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 10px;
-}
-.index header li {
-  margin: 0 15px;
-  text-transform: uppercase;
-}
-.index header li:nth-child(1), .index header li:hover {
+.index header li:nth-child(1) {
   color: #f8e71c;
 }
 .index header h2 {
@@ -505,27 +525,20 @@ footer p {
   text-transform: lowercase;
   color: #f8e71c;
   margin: 0 auto;
-  margin-top: calc((80vh - 63px) / 2 / 2);
+  margin-top: calc((90vh - 63px + 73px) / 2 / 2);
   max-width: 700px;
   z-index: 1;
   position: relative;
 }
-.index .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0;
+.index header .main-nav {
+  background-color: transparent;
 }
 
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  max-width: 50%;
+  justify-items: center;
 }
 
 span {
@@ -536,10 +549,12 @@ span {
 .header-img-2 {
   background-image: url(../planted-final-assets/header-box.jpg);
   background-position: center;
-  max-width: 90%;
+  min-width: 38%;
+  max-width: 48%;
+  height: 70%;
   position: absolute;
-  right: -650px;
-  top: -260px;
+  right: 5%;
+  top: 220px;
 }
 
 .about {
@@ -744,43 +759,9 @@ span {
 }
 .contact header {
   background-image: url(../planted-final-assets/contact-header-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 450px;
-  color: #f0efed;
 }
-.contact header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0 0;
-}
-.contact header .wrapper h2 {
-  max-width: 300px;
-  margin-top: 120px;
-}
-.contact ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 10px;
-}
-.contact li {
-  margin: 0 15px;
-  text-transform: uppercase;
-}
-.contact li:nth-child(4), .contact li:hover {
+.contact li:nth-child(4) {
   color: #f8e71c;
-}
-.contact nav {
-  background-color: black;
 }
 
 .contact-information {
@@ -815,43 +796,9 @@ span {
 
 .blog header {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 450px;
-  color: #f0efed;
 }
-.blog header .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 0 0;
-}
-.blog header .wrapper h2 {
-  max-width: 300px;
-  margin-top: 120px;
-}
-.blog header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 10px;
-}
-.blog header li {
-  margin: 0 15px;
-  text-transform: uppercase;
-}
-.blog header li:nth-child(3), .blog header li:hover {
+.blog header li:nth-child(3) {
   color: #f8e71c;
-}
-.blog header nav {
-  background-color: black;
 }
 .blog main {
   display: -webkit-box;
@@ -981,12 +928,6 @@ ul h5 {
   color: #074115;
 }
 
-@media (max-width: 1400px) {
-  .header-img-2 {
-    right: -600px;
-    top: -280px;
-  }
-}
 @media (max-width: 1200px) {
   .index header h2 {
     width: -webkit-min-content;
@@ -1011,7 +952,7 @@ ul h5 {
     height: 80vh;
   }
   .index header h2 {
-    margin-top: calc((80vh - 224px) / 2 / 2);
+    margin-top: calc((80vh - 224px + 73px) / 2 / 2);
   }
 
   .about {
@@ -1042,7 +983,7 @@ ul h5 {
     font-size: 500%;
     line-height: 5rem;
     margin: 0 auto;
-    margin-top: calc((80vh - 160px) / 2 / 2);
+    margin-top: calc((80vh - 160px + 57px) / 2 / 2);
   }
   .index header ul {
     -webkit-box-orient: vertical;
@@ -1050,13 +991,13 @@ ul h5 {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    padding-right: 35px;
+    padding-right: 15px;
     right: -150px;
-    top: 45px;
+    top: 42px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .index header li {
     margin: 15px 0;
@@ -1086,7 +1027,7 @@ ul h5 {
     color: #f8e71c;
     position: fixed;
     top: 12px;
-    right: 50px;
+    right: 20px;
     z-index: 10;
   }
   .menu-icon:hover {
@@ -1233,13 +1174,13 @@ ul h5 {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    padding-right: 35px;
+    padding-right: 15px;
     right: -150px;
     top: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .blog header li {
     margin: 15px 0;
@@ -1259,20 +1200,6 @@ ul h5 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-
-  .menu-icon {
-    display: block;
-    font-size: 30px;
-    font-size: 1.5rem;
-    color: #f8e71c;
-    position: fixed;
-    right: 50px;
-    z-index: 10;
-  }
-  .menu-icon:hover {
-    color: #f8e71c;
-    cursor: pointer;
   }
 
   .recent-posts {
@@ -1389,13 +1316,13 @@ form input[type=email] {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
-    padding-right: 35px;
+    padding-right: 15px;
     right: -150px;
     top: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 10;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .contact header li {
     margin: 15px 0;
