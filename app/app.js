@@ -26,6 +26,7 @@ commentForm.addEventListener("submit", function(event) {
 
         // set img source and define inner text for h5 and p
         userIcon.src = ("./planted-final-assets/icons8-user-64.png");
+        userIcon.alt = "user avatar";
         h5.innerText = (`${date.toLocaleDateString(undefined, dateFormat)} by ${nameInput.value}`);
         paragraph.innerText = textInput.value;
 
@@ -35,7 +36,7 @@ commentForm.addEventListener("submit", function(event) {
         commentContainer.append(userIcon, textContent);
 
         // append code to existing ul (comments ul)
-        commentsUl.append(commentContainer);
+        commentsUl.prepend(commentContainer);
 
         // clear form once submitted
         nameInput.value = "";
