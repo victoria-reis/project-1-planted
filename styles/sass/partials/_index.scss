@@ -38,12 +38,9 @@ span {
 .header-img-2 {
   background-image: url(../planted-final-assets/header-box.jpg);
   background-position: center;
-  min-width: 38%;
-  max-width: 48%;
-  height: 70%;
+  transform: translatex(680px) translateY(280px);
+  max-width: 33%;
   position: absolute;
-  right: 5%;
-  top: 220px;
 }
 
 // about styles
