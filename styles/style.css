@@ -900,23 +900,20 @@ aside input {
   background-color: #f0efed;
 }
 
-.comment-1,
-.comment-2 {
+#comments li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 50px 0;
 }
-.comment-1 .text-container,
-.comment-2 .text-container {
+#comments li .text-container {
   margin-left: 30px;
 }
-.comment-1 p,
-.comment-2 p {
+#comments li p {
   margin-top: 20px;
+  max-width: 100%;
 }
-.comment-1 img,
-.comment-2 img {
+#comments li img {
   max-width: 80px;
   max-height: 80px;
 }
@@ -1255,20 +1252,17 @@ ul h5 {
     max-width: 100%;
   }
 
-  .comment-1,
-.comment-2 {
+  #comments li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .comment-1 img,
-.comment-2 img {
+  #comments li img {
     display: none;
   }
-  .comment-1 .text-container,
-.comment-2 .text-container {
+  #comments li .text-container {
     margin-left: 0;
   }
 

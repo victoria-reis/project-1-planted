@@ -109,8 +109,7 @@ aside {
   }
 }
 
-.comment-1,
-.comment-2 {
+#comments li {
   display: flex;
   margin: 50px 0;
 
@@ -120,6 +119,7 @@ aside {
 
   p {
     margin-top: 20px;
+    max-width: 100%;
   }
 
   img {
